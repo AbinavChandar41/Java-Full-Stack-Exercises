@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function pattern() {
+                var a = document.getElementById("num").value;
+                var store = ""; 
+                for (let i = 1; i <= a; i++) {
+                    var str = "* ";
+                    store += str.repeat(i) + "<br>"; 
+                }
+                document.getElementById("resultdiv").innerHTML = store; 
+            }
+        </script>
+        <style>
+            button{
+                color: red;
+                background-color: blanchedalmond;
+            }
+            input{
+                background-color: lavenderblush;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="num">Enter a positive number:</label>
+        <input type="number" id="num" placeholder="Enter positive number">
+        <button onclick="pattern()">click me</button>
+        <br><br>
+        <div id="resultdiv"></div>
+    </body>
+</html>

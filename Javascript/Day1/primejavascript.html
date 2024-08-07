@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function prime() {
+                var a = document.getElementById("num").value;
+                var status = true;
+
+                if (a <= 1) {
+                    status = false;
+                } 
+                else {
+                    for (var i = 2; i < a; i++) {
+                        if (a % i == 0) {
+                            status = false;
+                        
+                        }
+                    }
+                }
+
+                if (status) {
+                    document.getElementById("resultdiv").innerHTML = "It is a prime number";
+                } else {
+                    document.getElementById("resultdiv").innerHTML = "It is not a prime number";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Enter a number <input type="number" id="num" value="Enter positive number" onfocus="this.value=''" onblur="prime()">
+        <br><br>
+        <br><br>
+        <div id="resultdiv"></div>
+    </body>
+</html>

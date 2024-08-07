@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function myfunction(){
+        let originalString = "   Hello, World! Welcome to JavaScript.   ";
+
+
+        let length = originalString.length;
+        console.log("Length:", length);
+
+
+        let charAtExample = originalString.charAt(7); 
+        console.log("Character at index 7:", charAtExample);
+
+
+        let slicedString = originalString.slice(3, 8); 
+        console.log("Sliced string (3-8):", slicedString);
+
+
+        let substringExample = originalString.substring(3, 8); 
+        console.log("Substring (3-8):", substringExample);
+
+
+        let substrExample = originalString.substr(3, 5); 
+        console.log("Substr (3, 5):", substrExample);
+
+
+        let upperCaseString = originalString.toUpperCase();
+        console.log("Upper case:", upperCaseString);
+
+
+        let lowerCaseString = originalString.toLowerCase();
+        console.log("Lower case:", lowerCaseString);
+
+
+        let concatenatedString = originalString.concat(" Enjoy coding!");
+        console.log("Concatenated string:", concatenatedString);
+
+
+        let trimmedString = originalString.trim();
+        console.log("Trimmed string:", trimmedString);
+
+
+        let trimmedStartString = originalString.trimStart();
+        console.log("Trimmed start:", trimmedStartString);
+
+
+        let trimmedEndString = originalString.trimEnd();
+        console.log("Trimmed end:", trimmedEndString);
+
+
+        let repeatedString = "Ha! ".repeat(3);
+        console.log("Repeated string:", repeatedString);
+
+
+        let replacedString = originalString.replace("World", "Universe");
+        console.log("<b>Replaced string (World -> Universe):", replacedString);
+
+
+        let replaceAllString = originalString.replaceAll("o", "0"); 
+        console.log("Replaced all 'o' with '0':", replaceAllString);
+
+
+        let splitString = originalString.split(" ");
+        console.log("Split string:", splitString);
+
+
+        
+
+
+    };
+    </script>
+</head>
+
+<body onload="myfunction()">
+
+</body>
+    
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Sample string
+let sampleString = "   Hello, World!   ";
+
+// 1. String length
+console.log("Length of string:", sampleString.length);
+
+// 2. String charAt()
+console.log("Character at index 4:", sampleString.charAt(4));
+
+// 3. String slice()
+console.log("Slice from index 3 to 8:", sampleString.slice(3, 8));
+
+// 4. String substring()
+console.log("Substring from index 3 to 8:", sampleString.substring(3, 8));
+
+// 5. String substr() (Note: This is deprecated, use substring or slice instead)
+console.log("Substr from index 3, length 5:", sampleString.substr(3, 5));
+
+// 6. String toUpperCase()
+console.log("Uppercase:", sampleString.toUpperCase());
+
+// 7. String toLowerCase()
+console.log("Lowercase:", sampleString.toLowerCase());
+
+// 8. String concat()
+let anotherString = " Welcome to JavaScript!";
+console.log("Concatenated string:", sampleString.concat(anotherString));
+
+// 9. String trim()
+console.log("Trimmed string:", sampleString.trim());
+
+// 10. String trimStart()
+console.log("Trimmed start:", sampleString.trimStart());
+
+// 11. String trimEnd()
+console.log("Trimmed end:", sampleString.trimEnd());
+
+// 12. String repeat()
+console.log("Repeated string (3 times):", sampleString.trim().repeat(3));
+
+// 13. String replace()
+console.log("Replace 'World' with 'JavaScript':", sampleString.replace("World", "JavaScript"));
+
+// 14. String replaceAll()
+console.log("Replace all 'o' with '0':", sampleString.replaceAll("o", "0"));
+
+// 15. String split()
+console.log("Split by space:", sampleString.trim().split(" "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
